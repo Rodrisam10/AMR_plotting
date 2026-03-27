@@ -20,9 +20,17 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.highlight
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/mermaid-init.js
 
 nav:
   - Inicio: index.md
@@ -31,6 +39,7 @@ nav:
       - Configuracion: configuration.md
   - Pipeline:
       - Resumen del flujo: pipeline/overview.md
+      - Flowchart detallado: pipeline/flowchart.md
       - Descarga de datos (SRA/BioProject): pipeline/data-download.md
       - SNP y filogenia: pipeline/snp-phylogeny.md
       - Resistoma e integracion: pipeline/resistome-integration.md

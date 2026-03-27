@@ -9,9 +9,9 @@
 
 ## Developed by
 
-Andres Lujan Carrion
+Elías Romero
 
-- Author's name: Andres Carrion
+- Author's name: Elías Romero
 - ORCID: [0009-0005-0375-8145](https://orcid.org/0009-0005-0375-8145)
 
 ## English
