@@ -1,0 +1,47 @@
+site_name: AMR_plotting Docs
+site_description: Filogenomica de resistencia para Klebsiella pneumoniae desde SRA paired-end
+site_url: https://rodrisam10.github.io/AMR_plotting/
+repo_url: https://github.com/Rodrisam10/AMR_plotting
+repo_name: Rodrisam10/AMR_plotting
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Inicio: index.md
+  - Primeros pasos:
+      - Instalacion: getting-started.md
+      - Configuracion: configuration.md
+  - Pipeline:
+      - Resumen del flujo: pipeline/overview.md
+      - Descarga de datos (SRA/BioProject): pipeline/data-download.md
+      - SNP y filogenia: pipeline/snp-phylogeny.md
+      - Resistoma e integracion: pipeline/resistome-integration.md
+      - Almacenamiento y limpieza: pipeline/storage.md
+  - Tutoriales:
+      - PRJNA717739 end-to-end: tutorials/prjna717739.md
+  - Referencia:
+      - Scripts: reference/scripts.md
+      - Estructura de outputs: reference/outputs.md
+  - Soporte:
+      - Troubleshooting: troubleshooting.md
+      - FAQ: faq.md
+      - Changelog: changelog.md
+      - Citacion: citation.md
