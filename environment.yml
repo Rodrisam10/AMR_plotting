@@ -1,0 +1,19 @@
+name: amrplot
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - sra-tools
+  - fastp
+  - snippy=4.6
+  - snp-sites
+  - iqtree
+  - shovill
+  - amrfinderplus
+  - ete3
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - pip
